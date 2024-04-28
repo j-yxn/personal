@@ -386,16 +386,23 @@ h1 {
   background: rgba(27, 27, 27, 0.192);
 }
 
-/* made credits */ 
-.author{
-  position: relative;
-  top: 875px;
-  left: 1872px;
-  font-size: 8px;
+.author {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* made credits */
+.author h2 {
+  position: fixed;
+  font-size: 16px;
   font-family: "Crimson Text";
   text-orientation: mixed;
   writing-mode: vertical-rl;
+  top: calc(103vh - 100px); /* Adjust the top position based on the window height */
+  right: 23px; /* Adjust the right position */
 }
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -410,6 +417,10 @@ h1 {
   
   .ic {
     display: none; /* Hide the icons */
+  }
+
+  .author h2 {
+    display: none; /* Hide the credit */
   }
 }
 
