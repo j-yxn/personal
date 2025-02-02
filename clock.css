@@ -1,0 +1,140 @@
+  .fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .clock {
+    position: absolute;
+    opacity: 1;
+    left: 50%;
+    top: 9%; 
+    transform: translateX(-50%);
+
+  }
+  
+  .centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+  }
+  
+  .expand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .round {
+    border-radius: 296px;
+  }
+  
+  .circle-1 {
+    width: 2px;
+    height: 2px;
+    border: 2px solid white;
+  }
+  
+  .circle-2 {
+    width: 3px;
+    height: 3px;
+    border: 1px solid #FA9F22;
+  }
+
+  .second-hand {
+    width: 1px;
+    background: #FA9F22;
+  }
+  .second-hand-front {
+    width: 1px;
+    height: 137px;
+    background: #FA9F22;
+    transform: translate(-50%,-100%) translateY(-3px);
+  }
+  .second-hand-back {
+    width: 1px;
+    height: 19px;
+    background: #FA9F22;
+    opacity: 1;
+    transform: translate(-50%,-100%) translateY(22px);
+  }
+  
+  .thin-hand {
+    width: 1px;
+    height: 30px;
+    background: #eeeeee;
+    transform: translate(-50%,-100%) translateY(-4px);
+  }
+  
+  .fat-hand {
+    box-sizing: border-box;
+    width: 2.1px;
+    height: 53px;
+    border-radius: 3px;
+    background: #eeeeee;
+    transform: translate(-50%,-100%) translateY(-18px);
+  }
+  
+  .minute-hand {
+    height: 104px;
+  }
+  
+  .minute-line {
+    background: #eeeeee;
+    width: 1.2px;
+    height: 5px;
+    transform: translate(-50%,-100%) translateY(-131px);
+    opacity: 0.25;
+  }
+
+  .major.minute-line {
+    height: 9px;
+    opacity: 0.5;
+  }
+
+  .minute-text-style .minute-text {
+    opacity: 0;
+  }
+
+  .hour-style-text .hour {
+    opacity: 0;
+  }
+  .hour-style .hour-text {
+    opacity: 0;
+  }
+
+  .hour-display-style .hour-item {
+    opacity: 0;
+  }
+ 
+  .minute-style-dot .part.minute-line,
+  .minute-style-dot.hour-style-pill .major.minute-line {
+    opacity: 0;
+  }
+
+  .minute-style-line.minute-display-style-fine-2 .whole.minute-line,
+  .minute-style-line.minute-display-style-fine-2 .major.minute-line {
+    height: 13px;
+    transform: translate(-50%,-100%) translateY(-127px);
+  }
+
+
