@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="slideshow.css" rel="stylesheet"/>
-    <link href="clock.css" rel="stylesheet"/>
-    <script src="slideshow.js"></script> 
+<head>
+    <link href="slideshow.css" rel="stylesheet" />
+    <link href="clock.css" rel="stylesheet" />
+    <script src="slider.js" defer></script>
     <script src="clock.js" defer></script>
     <title>y_jjxn / j-yxn</title>
-    <link rel="icon" href="/images/cdg.png">
-  </head>
-  <body>
-    <div class='slider'>
-      <div class='slider-track'>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-        <div class='img'></div>
-      </div>
-      
-    </div>
-    <div id="">
-    </div>
-    
-    <div class="fill">
-      <div class="clock
+    <link rel="icon" href="/images/cdg.png" />
+</head>
+<body>
+<main>
+    <!-- Slider Section -->
+    <section class="slider">
+        <div class="slider-independent">
+            <div id="img-1" class="img"></div>
+            <div id="img-2" class="img"></div>
+            <div id="img-3" class="img"></div>
+            <div id="img-4" class="img"></div>
+            <div id="img-5" class="img"></div>
+            <div id="img-6" class="img"></div>
+            <div id="img-7" class="img"></div>
+            <div id="img-8" class="img"></div>
+            <div id="img-9" class="img"></div>
+        </div>
+    </section>
+
+    <!-- Clock Section -->
+    <section class="fill">
+            <div class="clock
                   hour-style
                   hour-text-style
                   hour-display-style
                   minute-style-line
                   minute-display-style-fine-2
                   minute-text-style
-                  hand-style
-                  " id="utility-clock">
-        <div class="centre">
-            <div class="dynamic"></div>
-            <div class="expand round circle-1"></div>
-            <div class="anchor hour">
-                <div class="element thin-hand"></div>
-                <div class="element fat-hand"></div>
+                  hand-style"
+                 id="work-clock">
+                <div class="center">
+                    <div class="dynamic"></div>
+                    <div class="expand round circle-1"></div>
+                    <div class="anchor hour">
+                        <div class="element thin-hand"></div>
+                        <div class="element fat-hand"></div>
+                    </div>
+                    <div class="anchor minute">
+                        <div class="element thin-hand"></div>
+                        <div class="element fat-hand minute-hand"></div>
+                    </div>
+                    <div class="anchor second">
+                        <div class="element second-hand second-hand-front"></div>
+                        <div class="element second-hand second-hand-back"></div>
+                    </div>
+                    <div class="expand round circle-2"></div>
+                </div>
             </div>
-            <div class="anchor minute">
-                <div class="element thin-hand"></div>
-                <div class="element fat-hand minute-hand"></div>
-            </div>
-            <div class="anchor second">
-                <div class="element second-hand second-hand-front"></div>
-                <div class="element second-hand second-hand-back"></div>
-            </div>
-            <div class="expand round circle-2"></div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </section>
+</main>
+</body>
 </html>
