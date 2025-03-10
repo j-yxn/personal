@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="slideshow.css" rel="stylesheet" />
-    <link href="clock.css" rel="stylesheet" />
+    <link href="slideshow.css" rel="stylesheet"/>
+    <link href="clock.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
     <script src="slider.js" defer></script>
     <script src="clock.js" defer></script>
-    <title>y_jjxn / j-yxn</title>
-    <link rel="icon" href="/images/cdg.png" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/cdg.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>[ 97272 12147 ]</title>
 </head>
 <body>
 <main>
@@ -26,34 +31,59 @@
     </section>
 
     <!-- Clock Section -->
-    <section class="fill">
-            <div class="clock
-                  hour-style
-                  hour-text-style
-                  hour-display-style
-                  minute-style-line
-                  minute-display-style-fine-2
-                  minute-text-style
-                  hand-style"
-                 id="work-clock">
+    <section class="clockset">
+            <div class="clock 
+                       hour-style 
+                       hour-display-style 
+                       minute-style-line 
+                       minute-display-style 
+                       hand-style" 
+                id="work-clock">
                 <div class="center">
                     <div class="dynamic"></div>
-                    <div class="expand round circle-1"></div>
                     <div class="anchor hour">
                         <div class="element thin-hand"></div>
-                        <div class="element fat-hand"></div>
                     </div>
                     <div class="anchor minute">
-                        <div class="element thin-hand"></div>
-                        <div class="element fat-hand minute-hand"></div>
+                        <div class="element thin-hand minute-hand"></div>
                     </div>
                     <div class="anchor second">
-                        <div class="element second-hand second-hand-front"></div>
-                        <div class="element second-hand second-hand-back"></div>
+                        <div class="element second-hand second-hand-longend"></div>
+                        <div class="element second-hand second-hand-shortend"></div>
                     </div>
-                    <div class="expand round circle-2"></div>
                 </div>
             </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <footer>
+            <button class="button" id="b1">Github</button>
+            <button class="button" id="b2">Instagram</button>
+            <button class="button" id="b3">X</button>
+        </footer>
+        <!-- Watermark -->
+        <div class="watermark"> y_jjxn 2025</div>
+    </section>
+
+    <!-- Icon Configuration Section -->
+    <section class="icon-config">
+        <!-- Opener button on the bottom-left -->
+        <button class="opener-icon" id="openToggle">
+            <span class="up-icon">
+                <img src="images/up.png"/>
+            </span>
+        </button>
+        <!-- Hidden page  section that expands fullscreen -->
+        <footer class="expander" id="expandable">
+            <!-- Close button within the footer -->
+            <button class="closer-icon" id="closeToggle">
+             <span class="down-icon">
+                <img src="images/close.png"/>
+            </span>
+            </button>
+            <p>Content soon!</p>
+        </footer>
     </section>
 </main>
 </body>
