@@ -1,10 +1,8 @@
 :root {
-  --background-color: rgb(0, 0, 0); /* Globally sets the background color of the page */
   --image-spacing: 0.5rem; /* Space between slider images */
   --slider-height: 60vmin; /* Height of the image slider */
-  --aspect-ratio: 3 / 2; /* Aspect ratio for the images */
+  --aspect-ratio: 3 / 3; /* Aspect ratio for the images */
   --scrollbar-width: auto; /* Slider scrollbar styling */
-
   overscroll-behavior: none; /* Prevent over-scrolling on iOS and smoothen UX */
 }
 
@@ -12,6 +10,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 57, 87);
 }
 
 /* Main wrapper for the slider */
