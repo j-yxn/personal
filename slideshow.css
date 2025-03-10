@@ -14,10 +14,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--background-color);
-}
-
 /* Main wrapper for the slider */
 .slider {
   position: fixed; /* Center the slider on the screen */
